@@ -1,0 +1,135 @@
+.wrapper {
+  margin: 0 auto;
+  width: 1240px;
+}
+
+.header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  /* margin-top: 30px; */
+  padding-top: 30px;
+  height: 150px;
+  width: 100%;
+  background-color: rgb(210, 210, 207);
+  /* background-color: pink; */
+}
+.header .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header img {
+  width: 200px; 
+  height: 100px; 
+  object-fit: contain; /* 保持图片的宽高比，同时确保图片完全包含在容器内 */
+}
+.header .left {
+  border-right: 2px solid rgb(95, 115, 126);
+}
+.awardbeside {
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  text-align: center;
+  right: 145px;
+  top: 100px;
+  color: black;
+  /* background-color: pink; */
+  a {
+    margin: 14px 3px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  a:hover {
+    // border-bottom: 1px solid black;
+    color: white
+  } 
+}
+@media (max-width: 768px) {
+  .awardbeside {
+    top: 15px;
+  }
+}
+.beside {
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  text-align: center;
+  right: 140px;
+  top: 100px;
+  color: black;
+  /* background-color: pink; */
+}
+.beside .left {
+  padding-top: 2px;
+}
+.beside .left:hover {
+  border-bottom: 1px solid black;
+}
+.beside .right:hover {
+  border-bottom: 1px solid black;
+}
+.beside .middle:hover {
+  border-bottom: 1px solid black;
+}
+.beside .right {
+  margin-left: 20px;
+  padding-bottom: 1px;
+}
+.beside .right .iconfont {
+  margin-right: 3px;
+  font-size: 20px;
+}
+.beside .middle {
+  margin-left: 20px;
+  padding-bottom: 1px;
+}
+.beside .middle .iconfont {
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+.nav {
+  z-index: 9999;
+  position: fixed;
+  top: 150px;
+  /* margin-top: 150px; */
+  height: 42px;
+  width: 100%;
+  /* background-color:aqua ; */
+  background-color: rgb(210,210,207);
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+}
+.nav li {
+  margin: 0 25px;
+  padding-bottom: 5px;
+  color: black;
+}
+.nav li:hover{
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+
+.footer {
+  height: 400px;
+  background-color: rgb(210, 210, 207);
+  overflow: hidden; /* 添加这行 */
+}
+.footer .wechat {
+  margin-left: 1100px;
+  // margin: auto;
+  margin-top: 155px;
+  width: 150px;
+}
+.footer .wechat img {
+  width: 150px;
+  height: 150px;
+}
+.footer .wechat h4 {
+  margin-top: 10px;
+  text-align:center
+}
