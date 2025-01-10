@@ -29,12 +29,12 @@
 
     <div class="nav wrapper">
         <ul>
-          <li @click="showAll">全部</li>
-          <li @click="showSpecial">特价</li>
-          <li @click="showRecord">唱片</li>
-          <li @click="showClothing">衣饰</li>
-          <li @click="showDaily">日用品</li>
-          <li @click="showOther">其它</li>
+          <li :class="{ activeli:type === 'all' }" @click="showAll">全部</li>
+            <li :class="{ activeli:type === 'special' }" @click="showSpecial">特价</li>
+            <li :class="{ activeli:type === 'record' }" @click="showRecord">唱片</li>
+            <li :class="{ activeli:type === 'clothing' }" @click="showClothing">衣饰</li>
+            <li :class="{ activeli:type === 'daily' }" @click="showDaily">日用品</li>
+            <li :class="{ activeli:type === 'other' }" @click="showOther">其它</li>
         </ul>
     </div>
     <div class="goods wrapper">
