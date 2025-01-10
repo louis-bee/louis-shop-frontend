@@ -24,8 +24,8 @@ import store from '@/store'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  // mode: 'history', // 使用history模式
-  mode: 'hash',
+  mode: 'history', // 使用history模式
+  // mode: 'hash',
   routes: [
     { path: '/', component: Layout, meta: { title: '首页 - 路易斯商城' } },
     { path: '/login', component: Login, meta: { title: '登录 - 路易斯商城' } },

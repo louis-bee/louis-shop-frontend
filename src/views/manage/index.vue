@@ -142,6 +142,9 @@ export default {
 </script>
 
 <style>
+.activeli {
+  border-bottom: 1px solid black; /* 你可以根据需要调整颜色和宽度 */
+}
 .header .manage-title {
   display: flex;
   padding-top: 15px;

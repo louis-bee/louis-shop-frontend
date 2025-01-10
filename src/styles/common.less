@@ -2,7 +2,6 @@
   margin: 0 auto;
   width: 1240px;
 }
-
 .header {
   position: fixed;
   z-index: 9999;
@@ -45,11 +44,7 @@
     color: white
   } 
 }
-@media (max-width: 768px) {
-  .awardbeside {
-    top: 15px;
-  }
-}
+
 .beside {
   z-index: 9999;
   position: fixed;
@@ -112,7 +107,42 @@
   cursor: pointer;
   border-bottom: 1px solid black;
 }
-
+@media (max-width: 768px) {
+  .header {
+    height: 73px;
+  }
+  .header img {
+    width: 80px; 
+    height: 40px; 
+    object-fit: contain; /* 保持图片的宽高比，同时确保图片完全包含在容器内 */
+  }
+  .header .left {
+    border-right: 0.5px solid rgb(95, 115, 126);
+  }
+  .nav{
+    top:55px
+  }
+  .nav li{
+    font-weight: 300;
+  }
+  .nav li:hover{
+    border-bottom: 0.8px solid black;
+  }
+  .awardbeside {
+    right: 18px;
+    top: 33px;
+    a {
+      font-size: 8px;
+      font-weight: 200;
+    }
+  }
+  .oldtop {
+    height: 60px;
+  }
+  .oldtop2 {
+    margin-top: 60px;
+  }
+}
 
 .footer {
   height: 400px;

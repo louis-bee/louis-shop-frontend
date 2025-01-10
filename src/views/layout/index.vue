@@ -172,6 +172,9 @@ export default {
 </script>
 
 <style>
+.activeli {
+  border-bottom: 1px solid black; /* 你可以根据需要调整颜色和宽度 */
+}
 .ellipsis {
   padding-right: 5px;
   white-space: nowrap; /* 保持文本在一行内 */
@@ -187,7 +190,7 @@ export default {
   cursor: pointer;
 }
 .goods {
-  margin-top: 208px !important;
+  margin-top: 208px;
 }
 .goods ul {
   display: flex;
@@ -228,5 +231,10 @@ export default {
   margin-top: 14px;
   margin-bottom: 7px;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  .goods {
+    margin-top: 75px;
+  }
 }
 </style>

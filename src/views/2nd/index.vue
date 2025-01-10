@@ -1,6 +1,6 @@
 <template>
   <div class="theCart">
-    <div class="header">
+    <div class="header  oldtop">
       <div class="wrapper">
         <div class="left">
             <a href="https://space.bilibili.com/501779432" target="_blank">
@@ -14,14 +14,14 @@
         </div>
       </div>
     </div>
-    <div class="old2">
-      <div class='pic' id="firstpic"><img src="@/assets/second/第二届图标.jpg" alt=""></div>
-      <div class='pic'><img src="@/assets/second/年度流行专辑.webp" alt=""></div>
+    <div class="old2 oldtop2">
+      <div class='pic' id="firstpic"><img src="@/assets/second/年度流行专辑.webp" alt=""></div>
       <div class='pic'><img src="@/assets/second/年度电音专辑.webp" alt=""></div>
       <div class='pic'><img src="@/assets/second/年度摇滚专辑.webp" alt=""></div>
       <div class='pic'><img src="@/assets/second/年度考古专辑.webp" alt=""></div>
       <div class='pic'><img src="@/assets/second/年度艺人.webp" alt=""></div>
-      <div class='pic'><img src="@/assets/second/年度歌单.webp" alt=""></div>
+      <div class='pic' ><img src="@/assets/second/年度歌单.webp" alt=""></div>
+      <div class='pic' id="lastpic"><img src="@/assets/second/第二届图标.jpg" alt=""></div>
     </div>
     <div class="footer"></div>
   </div>
@@ -47,7 +47,6 @@ export default {
 }
 .old2 #firstpic {
   margin-top: 150px;
-  width: 160px;
 }
 .old2 .pic{
   margin-top: 10px;
@@ -55,4 +54,23 @@ export default {
   margin-right: auto;
   width: 550px;
 }
+.old2 #lastpic {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .old2 .pic{
+    margin-top: 170px;
+    width: 100vw;
+  }
+  .old2 #lastpic {
+    margin-top: 200px;
+    width: 40vw;
+    margin-bottom: 200px;
+  }
+  .old2 #firstpic {
+  margin-top: 180px;
+}
+}
+
 </style>
