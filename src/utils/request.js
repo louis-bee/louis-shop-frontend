@@ -1,7 +1,8 @@
 import axios from 'axios'
 // 创建axios实例
 const instance = axios.create({
-  baseURL: 'http://8.134.114.241:81/post/',
+  baseURL: 'https://8.134.114.241:443/post/',
+  // baseURL: 'http://8.134.114.241:81/post/',
   timeout: 10000
   // headers: {
   //   'Content-Type': 'multipart/form-data'
